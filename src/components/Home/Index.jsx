@@ -184,7 +184,12 @@ function Home() {
     <Button className="position:absolute top-10 bottom-4" text="SUBSCRIBE" bgColor="bg-[#f5f19c]" />
 </div> */}
 <div className="fixed inset-0 flex items-center justify-center z-50">
-  <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold" text="GET STARTED" />
+<button 
+  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
+  onClick={() => window.location.href = 'http://localhost:3000'}
+>
+  GET STARTED
+</button>
 </div>
 
     {/* Black overlay */}

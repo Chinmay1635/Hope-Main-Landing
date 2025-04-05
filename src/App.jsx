@@ -53,9 +53,9 @@ function App() {
       <Craft />
       <Real />
       <Team  />
-      <Para  />
+      {/* <Para  />
       <Para2 />
-      <Capsule />
+      <Capsule /> */}
       <Footer />
     </div>    
   )

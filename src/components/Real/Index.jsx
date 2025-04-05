@@ -65,11 +65,11 @@ function Real() {
                     className="text1 font-[SansitaReg] text-[7vh] leading-[8vh]
                     sm:text-[15vh] sm:leading-[18vh]"
                 >
-                    <h1 className="">
-                        Real Talk,    
+                    <h1 className="text-8xl">
+                        Real Tech Sees,    
                     </h1>
-                    <h1 className="">
-                        Real Impact
+                    <h1 className="text-8xl">
+                        What Abusers Don't
                     </h1>
                 </div>
                 <div 
@@ -104,13 +104,13 @@ function Real() {
                         tracking-tight text-[2.2vh] sm:absolute top-0 left-0 z-[3]  -translate-y-2/3 
                         sm:-translate-y-1/2 -translate-x-1/3'
                     >
-                        We’re on a mission to impact as many lives as possible and build a better company while we do it. Here’s our progress.
+                        Every discreet alert is a lifeline. Every update means more women escape safely. This is our impact.
                     </h3>
                     <h1 className=' font-semibold text-[10vh] sm:text-[20vh] leading-none text-white '>
-                        20.4M
+                        1.4k
                     </h1>
                     <h3 className=' text-[2vh] sm:text-[5vh] font-semibold sm:leading-[7vh]'>
-                        Real people — real lives — we have built products and solutions for.
+                      1.4k Lives Saved And Many More To Go.
                     </h3>    
                 </div>
                 <div 
@@ -167,13 +167,13 @@ function Real() {
                         sm:text-[2.5vh] absolute sm:top-0 sm:left-0 -translate-x-1/2 -translate-y-[30vh] z-[3] 
                         sm:-translate-y-1/2 sm:-translate-x-1/3'
                     >
-                        Our team is global and diverse, because our individual experiences make us stronger.
+                       Our Page Helps women find help when they need it the most
                     </h3>
                     <h1 className=' font-semibold text-[10vh] sm:text-[20vh] leading-none text-white'>
                         49%
                     </h1>
                     <h3 className='text-[3.5vh] whitespace-nowrap sm:text-[6vh] font-semibold sm:leading-[6vh]'>
-                        Expert Women in Tech.
+                        Womens feels safe.
                     </h3>    
                 </div>
                 <div 
@@ -216,7 +216,7 @@ function Real() {
                         13
                     </h1>
                     <h3 className='text-[3.1vh] leading-[3.4vh] sm:text-[6vh] font-semibold sm:leading-[8vh]'>
-                        Nationalities Represented on Our <br/> Team.
+                        Award won by our <br/> Team.
                     </h3>    
                 </div>
                 <div 
