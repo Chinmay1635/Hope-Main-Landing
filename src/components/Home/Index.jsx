@@ -1,4 +1,4 @@
-import video from '../../assets/video/1ENIoa5sjq.mp4'
+import video from '../../assets/video/HomepageVideo.mp4'
 import Row from '../Row'
 import {useEffect, useState, useRef} from 'react';
 import {motion, useScroll, useMotionValueEvent } from 'framer-motion';
@@ -9,6 +9,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 // import { AiOutlineMenu } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";
+import logo from '../../assets/images/hope_logo.png'
+import Button  from '../Button';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -106,7 +108,7 @@ function Home() {
                 <div className="w-full flex sm:flex items-center justify-between  ">
                     <div className="logo w-[12vh] h-[12vh] sm:w-[16vh] sm:h-[10vh] cursor-pointer z-[9] ">
                         {/* logo */}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 141 41" fill="none">
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 141 41" fill="none">
                             <g >
                                 <path d="M-0.43052 20.9465C0.652448 20.9465 1.68707 20.941 2.72169 20.9588C2.79352 20.9588 2.91508 21.1241 2.92475 21.2211C3.02144 22.1886 3.23002 23.1274 3.61541 24.0225C4.50638 26.0928 6.05623 27.4402 8.25256 27.995C10.6602 28.6031 13.043 28.4213 15.3402 27.4989C16.8251 26.9031 17.9261 25.8687 18.3391 24.2903C18.7991 22.533 18.6223 20.8699 17.2382 19.5253C16.4757 18.7846 15.5156 18.3282 14.4907 18.0973C12.6576 17.686 10.8094 17.3416 8.9598 17.0054C7.32016 16.7075 5.68189 16.4124 4.14723 15.7332C2.00201 14.7835 0.666261 13.2243 0.395519 10.8616C0.177268 8.95665 0.428671 7.14329 1.45915 5.48297C2.13186 4.40069 3.07255 3.59718 4.19143 2.99591C5.71228 2.17873 7.35884 1.80704 9.07169 1.67312C10.2514 1.5802 11.4338 1.56107 12.6079 1.71412C14.7932 2.00109 16.7644 2.78273 18.346 4.34603C19.5574 5.54446 20.3669 6.9916 20.7647 8.63962C20.9678 9.47593 21.0755 10.3341 21.2219 11.1841C21.233 11.2483 21.2109 11.3166 21.2012 11.43C20.8517 11.43 20.5092 11.43 20.1666 11.43C19.5339 11.43 18.8999 11.4109 18.2673 11.4382C17.9122 11.4533 17.8183 11.3043 17.7948 10.99C17.6926 9.65221 17.3197 8.40048 16.5585 7.27584C15.5405 5.76994 14.0859 4.93363 12.3109 4.62753C10.5718 4.3269 8.8493 4.42255 7.1765 4.99786C5.46917 5.58546 4.2453 6.67184 3.8903 8.4893C3.48833 10.5459 4.06573 12.2267 6.34079 13.2147C7.65859 13.7873 9.06617 14.021 10.4737 14.2574C12.0899 14.5293 13.7157 14.7657 15.314 15.1196C16.8873 15.4681 18.4012 16.0065 19.6804 17.0437C20.7951 17.9483 21.5452 19.0784 21.7979 20.4859C21.9361 21.2526 22.0604 22.0383 22.0424 22.8118C21.9844 25.3029 21.0672 27.4169 19.0104 28.9461C17.6926 29.9258 16.18 30.4902 14.5736 30.8154C13.206 31.0928 11.8233 31.2117 10.4309 31.1776C7.97077 31.1174 5.65012 30.5872 3.60713 29.1428C2.0103 28.0127 0.95496 26.4932 0.280868 24.6907C-0.103144 23.6617 -0.3062 22.5945 -0.427757 21.5095C-0.445715 21.3428 -0.43052 21.1733 -0.43052 20.9478V20.9465Z" fill="currentColor"></path>
                                 <path d="M30.9936 32.9602H34.0202C34.1583 33.407 34.2688 33.8675 34.4387 34.3062C35.0423 35.8613 36.2344 36.7755 37.8188 37.195C38.4556 37.3644 39.127 37.4874 39.7817 37.4888C41.4642 37.4929 43.061 37.1362 44.307 35.92C45.0018 35.2422 45.4811 34.395 45.6759 33.4398C45.8099 32.7866 45.8955 32.1143 45.9052 31.4502C45.9314 29.5261 45.9107 27.6007 45.9052 25.6766C45.9052 25.4156 45.8762 25.1546 45.8624 24.9114C45.8071 26.1508 45.4908 27.3233 44.7752 28.381C43.9202 29.6464 42.7005 30.3856 41.2515 30.7888C40.2251 31.0744 39.1684 31.1714 38.1089 31.0962C34.8614 30.8653 32.5546 29.2924 31.3196 26.2861C30.5047 24.3005 30.3361 22.2139 30.448 20.0917C30.5116 18.8727 30.7188 17.6839 31.0986 16.5196C32.1015 13.4422 34.5092 11.3952 37.8934 11.1711C39.2568 11.0809 40.5843 11.1752 41.8606 11.6357C44.4976 12.5854 45.6634 14.5874 45.9162 17.2521C45.9162 15.477 45.9231 13.7005 45.9093 11.9254C45.9066 11.6165 45.9867 11.5086 46.3127 11.5154C47.1636 11.5359 48.0159 11.5305 48.8681 11.5182C49.1251 11.5141 49.201 11.5974 49.201 11.8516C49.1955 18.4915 49.2259 25.1314 49.1776 31.7713C49.1624 33.7719 48.5712 35.6426 47.2395 37.2237C46.2035 38.4522 44.8775 39.2393 43.3442 39.6739C41.2722 40.2601 39.1656 40.2656 37.0715 39.816C34.9995 39.3719 33.277 38.362 32.1001 36.5568C31.4592 35.5729 31.1345 34.4825 30.966 33.3387C30.9564 33.2717 30.9605 33.202 30.9646 33.1337C30.9674 33.0886 30.9785 33.0449 30.9936 32.9629V32.9602ZM46.1883 21.1822C46.169 19.9906 46.0405 18.8891 45.6759 17.826C45.3153 16.7792 44.7918 15.8199 43.9202 15.1012C42.5568 13.9765 40.9697 13.6199 39.2223 13.7961C36.9127 14.0298 35.331 15.2064 34.4263 17.3081C33.8986 18.5339 33.7605 19.8279 33.7563 21.1357C33.7522 22.3287 33.9055 23.508 34.3323 24.6394C34.7923 25.8556 35.5092 26.8641 36.6378 27.5611C37.7788 28.2648 39.0247 28.4821 40.3522 28.4165C42.5568 28.3085 44.1992 27.3301 45.2366 25.3924C45.9535 24.0532 46.1455 22.5979 46.1883 21.1835V21.1822Z" fill="currentColor"></path>
@@ -124,9 +126,18 @@ function Home() {
                                 <rect width="141" height="40" fill="currentColor" transform="translate(0 0.593384)"></rect>
                                 </clipPath>
                             </defs>
-                        </svg>
+                        </svg> */}
+                        {
+                            <img className="h-20 w-auto"
+                            src={logo} 
+                            alt="Your Platform Name" 
+                            loading="eager" 
+                            decoding="async"
+                          />
+                          
+                        }
                     </div>                   
-                    <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
+                    {/* <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
                         {["Solutions", "About", "Insight", "Team", "Careers"].map((item, index) => (
                             <h4 key={index} className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center  flex flex-col
                             font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}> 
@@ -134,7 +145,7 @@ function Home() {
                                 <a className={`atag ${styles.atag} relative`}>{item} </a>                      
                             </h4>   
                         ))}
-                    </div>
+                    </div> */}
                     
                         <BiMenu
                             style={{
@@ -150,27 +161,36 @@ function Home() {
 
             <div className='btmtext absolute z-[4] bottom-[4%] left-[25%] text-center sm:text-start sm:bottom-[7%] sm:left-8 w-48 '>
                 <h1 className='sm:text-[2vh] font-semibold'>
-                    We build big ideas.
-                    Software. Apps. Tools.
-                    For real people. Real lives.
+                When silence isn’t safe.
+                We speak in code.
+                For her.
+                For justice.
                 </h1>
             </div>
             {/* video div */}
             <div 
-                
-                className={` vdodiv w-full h-screen absolute z-[3] 
-                top-0 left-0 overflow-hidden sm:overflow-visible ${styles.vdodiv}`}
-            >   
-                <video
-                    className="absolute w-full h-screen object-cover top-1/2 left-1/2 
-                    -translate-x-1/2 -translate-y-1/2"
-                    autoPlay
-                    loop
-                    muted
-                    src={video}
-                >     
-                </video> 
-            </div>
+    className={`vdodiv w-screen h-screen absolute z-[3] 
+    top-0 left-0 overflow-hidden lg:overflow-visible ${styles.vdodiv}`}
+>   
+    <video
+        className="absolute w-full h-screen object-cover top-1/2 left-1/2 
+        -translate-x-1/2 -translate-y-1/2"
+        autoPlay
+        loop
+        muted
+        src={video}
+    /> 
+{/* <div>
+    <Button className="position:absolute top-10 bottom-4" text="SUBSCRIBE" bgColor="bg-[#f5f19c]" />
+</div> */}
+<div className="fixed inset-0 flex items-center justify-center z-50">
+  <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold" text="GET STARTED" />
+</div>
+
+    {/* Black overlay */}
+    <div className="absolute w-full h-screen top-0 left-0 bg-black/40 z-10"></div>
+</div>
+
 
             {/* marquee div */}
             <div 
@@ -182,7 +202,7 @@ function Home() {
                     className=' heading absolute  top-[12%] sm:top-[7%] left-1/2 
                     -translate-x-1/2 w-72'
                 >
-                    <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center'>Crafting a new paradigm of healthcare, one that is</h2>
+                    <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center'>Revutionalizing the world. Making a safer place for Women</h2>
                 </div>
 
                 <div 
