@@ -186,7 +186,7 @@ function Home() {
 <div className="fixed inset-0 flex items-center justify-center z-50">
 <button 
   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
-  onClick={() => window.location.href = 'http://localhost:3000'}
+  onClick={() => window.location.href = 'https://hope-red-mu.vercel.app'}
 >
   GET STARTED
 </button>
