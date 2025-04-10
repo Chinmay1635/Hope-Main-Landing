@@ -213,10 +213,10 @@ function Real() {
                 </div>
                 <div className='w-[60%] text-center font-[SansitaReg] relative'>                   
                     <h1 className=' font-semibold text-[10vh] sm:text-[20vh] leading-none text-white'>
-                        13
+                        34%
                     </h1>
                     <h3 className='text-[3.1vh] leading-[3.4vh] sm:text-[6vh] font-semibold sm:leading-[8vh]'>
-                        Award won by our <br/> Team.
+                        Women know their legal <br/> rights.
                     </h3>    
                 </div>
                 <div 

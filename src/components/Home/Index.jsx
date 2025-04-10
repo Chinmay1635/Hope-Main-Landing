@@ -186,7 +186,7 @@ function Home() {
 <div className="fixed inset-0 flex items-center justify-center z-50">
 <button 
   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
-  onClick={() => window.location.href = 'http://localhost:3000'}
+  onClick={() => window.location.href = 'http://localhost:5500'}
 >
   GET STARTED
 </button>
@@ -207,7 +207,7 @@ function Home() {
                     className=' heading absolute  top-[12%] sm:top-[7%] left-1/2 
                     -translate-x-1/2 w-72'
                 >
-                    <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center'>Revutionalizing the world. Making a safer place for Women</h2>
+                    <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center'>Revolutionizing the world. Making a safer place for Women</h2>
                 </div>
 
                 <div 
